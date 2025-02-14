@@ -1,10 +1,13 @@
 'use client'
 import React, {useEffect, useRef, useState} from 'react';
 import AudioPlayer from 'react-h5-audio-player';
+import {useSearchParams} from "next/navigation";
 
 
 const Page = () => {
-    const [name, setName] = useState('Su Thit');
+    const searchParams = useSearchParams()
+    const name = searchParams.get('name') || 'Su Thit';
+
     const [yesButtonClicked, setYesButtonClicked] = useState(false);
     const [yesButtonFontSize, setYesButtonFontSize] = useState(0)
     const [noTextIdx, setNoTextIdx] = useState(0)
