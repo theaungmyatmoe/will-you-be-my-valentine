@@ -1,7 +1,9 @@
 # Will You Be My Valentine Usage
 
-Change the name
+Copy the URL and change the `name` parameter to your name.
 
-https://github.com/theaungmyatmoe/will-you-be-my-valentine/blob/6f929b4659118b6d3de2862b0941165f14d43ebb/app/page.tsx#L7
+```
+https://will-you-be-my-valentine.vercel.app/?name="YOUR GIRLFRIEND NAME"
+```
 
-to your girlfriend name.
+The default name is `Su Thit`.

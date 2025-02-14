@@ -1,9 +1,9 @@
 'use client'
 import React, {useEffect, useRef, useState} from 'react';
-import AudioPlayer from 'react-h5-audio-player';
 import {useSearchParams} from "next/navigation";
 
 
+// refacotr above code in new component
 const Page = () => {
     const searchParams = useSearchParams()
     const name = searchParams.get('name') || 'Su Thit';
@@ -53,10 +53,10 @@ const Page = () => {
         <>
 
             {yesButtonClicked && <main className="flex flex-col justify-center items-center min-h-screen">
-                <h1 className="text-4xl font-bold text-4xl font-bold text-red-600 text-wrap">
+                <h1 className="text-4xl font-bold text-red-600 text-wrap">
                     I knew you would say yes! SEE YOU Valentine 💕
                 </h1>
-                <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"/>
+                <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt={"Gif"}/>
             </main>}
 
             {/* She is not accepting */}
@@ -85,15 +85,15 @@ const Page = () => {
                         (
                             <div className="flex justify-center mt-8">
                                 <img className="h-[200px]"
-                                     src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"/>
+                                     src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
+                                     alt={"Gif"}/>
                             </div>
                         )
                     }
                 </main>
             )}
         </>
-
     );
-};
+}
 
 export default Page;
